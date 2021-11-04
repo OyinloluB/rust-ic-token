@@ -1,0 +1,11 @@
+/Users/oyinlolu/Documents/Rust/dfinity/ic_token/target/debug/deps/crc32fast-634471e40f12f011.rmeta: /Users/oyinlolu/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.2.1/src/lib.rs /Users/oyinlolu/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.2.1/src/baseline.rs /Users/oyinlolu/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.2.1/src/combine.rs /Users/oyinlolu/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.2.1/src/specialized/mod.rs /Users/oyinlolu/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.2.1/src/table.rs
+
+/Users/oyinlolu/Documents/Rust/dfinity/ic_token/target/debug/deps/libcrc32fast-634471e40f12f011.rlib: /Users/oyinlolu/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.2.1/src/lib.rs /Users/oyinlolu/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.2.1/src/baseline.rs /Users/oyinlolu/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.2.1/src/combine.rs /Users/oyinlolu/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.2.1/src/specialized/mod.rs /Users/oyinlolu/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.2.1/src/table.rs
+
+/Users/oyinlolu/Documents/Rust/dfinity/ic_token/target/debug/deps/crc32fast-634471e40f12f011.d: /Users/oyinlolu/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.2.1/src/lib.rs /Users/oyinlolu/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.2.1/src/baseline.rs /Users/oyinlolu/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.2.1/src/combine.rs /Users/oyinlolu/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.2.1/src/specialized/mod.rs /Users/oyinlolu/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.2.1/src/table.rs
+
+/Users/oyinlolu/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.2.1/src/lib.rs:
+/Users/oyinlolu/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.2.1/src/baseline.rs:
+/Users/oyinlolu/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.2.1/src/combine.rs:
+/Users/oyinlolu/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.2.1/src/specialized/mod.rs:
+/Users/oyinlolu/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.2.1/src/table.rs:
