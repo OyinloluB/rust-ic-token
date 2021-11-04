@@ -1,21 +1,10 @@
 {
   "canisters": {
     "ic_token": {
-      "main": "src/ic_token/main.mo",
-      "type": "motoko"
-    },
-    "ic_token_assets": {
-      "dependencies": [
-        "ic_token"
-      ],
-      "frontend": {
-        "entrypoint": "src/ic_token_assets/src/index.html"
-      },
-      "source": [
-        "src/ic_token_assets/assets",
-        "dist/ic_token_assets/"
-      ],
-      "type": "assets"
+        "build": "cargo build --target wasm32-unknown-unknown --release",
+        "candid": "ictoken.did",
+        "wasm": "target/wasm32-unknown-unknown/release/opt.wasm",
+        "type": "custom"
     }
   },
   "defaults": {
@@ -24,7 +13,6 @@
       "packtool": ""
     }
   },
-  "dfx": "0.8.0",
   "networks": {
     "local": {
       "bind": "127.0.0.1:8000",
