@@ -1,0 +1,26 @@
+[package]
+name = "token"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# Rust canister development kit for the internet computer
+ic-cdk-macros = "0.3"
+
+# Interface description language for interacting with the internet computer
+candid = "0.7.4"
+
+# Provides a derive macro to generate implementations of the serialize and deserialize traits
+serde = "1.0"
+
+# Helps developers write canisters and test them
+ic-kit = "0.4.3"
+ic-cdk = "0.3.1"
+
+# Asserts that a panic happens and (optionally) what kind of panic has happened
+assert-panic = "1.0.1"
+
+[target.'cfg(not(target_family = "wasm"))'.dependencies]
+async-std = { version="1.10.0", features = ["attributes"] }
