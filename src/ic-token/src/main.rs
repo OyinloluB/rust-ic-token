@@ -92,6 +92,11 @@ enum TxError {
 }
 type TxReceipt = Result<usize, TxError>;
 
+/*
+    Collects data about the trannsaction.
+    Makes the Ops Vector mutable
+    Stores data received in the OpRecord
+*/
 fn add_record(
     caller: Option<Principal>,
     op: Operation,
@@ -114,4 +119,60 @@ fn add_record(
         timestamp,
     });
     index
+}
+
+/*
+    Init marks a function to run before the main function
+    This function stores the meta data of the token.
+    It also passes the data into the add_record function that
+    handles storing in the OpRecord struct.
+    _ is used when the name doesn't matter.
+*/
+#[init]
+#[candid_method(init)]
+fn init(
+    logo: String,
+    name: String,
+    symbol: String,
+    decimals: u8,
+    total_supply: u64,
+    owner: Principal,
+    fee: u64,
+) {
+    let metadata = ic::get_mut::<Metadata>();
+    metadata.logo = logo;
+    metadata.name = name;
+    metadata.symbol = symbol;
+    metadata.decimals = decimals;
+    metadata.total_supply = total_supply;
+    metadata.owner = owner;
+    metadata.fee = fee;
+    let balances = ic::get_mut::<Balances>();
+    balances.insert(owner, total_supply);
+    let _ = add_record(
+        Some(owner),
+        Operation::Mint,
+        Principal::from_text("aaaaa-aa").unwrap(),
+        owner,
+        total_supply,
+        0,
+        ic::time(),
+    );
+}
+
+fn _transfer(from: Principal, to: Principal, value: u64) {
+    let balances = ic::get_mut::<Balances>();
+    let from_balance = balance_of(from);
+    let from_balance_new = from_balance - value;
+    if from_balance_new != 0 {
+        balances.insert(from, from_balance_new);
+    } else {
+        balances.remove(&from);
+    }
+    
+    let to_balance = balance_of(to);
+    let to_balance_new = to_balance + value;
+    if to_balance_new != 0 {
+        balances.insert(to, to_balance_new);
+    }
 }
