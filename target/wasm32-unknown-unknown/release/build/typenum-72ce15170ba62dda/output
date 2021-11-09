@@ -1,0 +1,2 @@
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=/Users/oyinlolu/Documents/Rust/dfinity/ic_token/target/wasm32-unknown-unknown/release/build/typenum-72ce15170ba62dda/out/consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=/Users/oyinlolu/Documents/Rust/dfinity/ic_token/target/wasm32-unknown-unknown/release/build/typenum-72ce15170ba62dda/out/op.rs
